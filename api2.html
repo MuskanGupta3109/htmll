@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>example of drag and drop</title>
+
+    <style type="text/css">
+        #div1{
+            width:300px;
+            height:75px;
+            padding:10px;
+            border:1px solid #aaaaaa;
+        }
+    </style>
+    <script>
+        function drag(e){
+                e.dataTransfer.setData("Text",e.target.id);
+        }
+        function allowDrop(e){
+            e.preventDefault();
+
+        }
+        function drop(e){
+            e.preventDefault();
+        }
+
+    </script>
+
+</head>
+<body>
+    <img id="darg1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEhhFBKXSoijaxWqE-JHq9qJ7ewcPa8_TfZMIL9QjP&s" draggable="true" ondragstart="drag(event)" width="350" height="100">
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+
+    </div>
+    
+</body>
+<script>
+
+</script>
+</html>

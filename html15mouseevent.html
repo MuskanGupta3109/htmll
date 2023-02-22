@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>keyboard events</title>
+        <script type="text/javascript">
+           function clickk(){
+               alert("button is clicked");
+           } 
+           function mouseoverfunction(){
+                document.body.style.background="cyan";
+           }           
+           function mouseoutfunction(){
+                document.body.style.background="lightgreen";
+           }  
+           function mousemovefunction(){
+                document.body.style.background="violet";
+           } 
+           function mouseupfunction(){
+                document.body.style.background="orange";
+           }             
+        </script>
+        <style>
+            
+        .d1{
+                background: green;
+                height: 200px;
+                width: 600px;
+                
+            }
+            .d11{
+                background:red;
+                height: 50px;
+                width: 200px;
+                margin-bottom: 10%;
+            
+            }
+            .d13{
+                background: rgb(128, 0, 98);
+                height: 200px;
+                width: 600px;
+        </style>
+    </head>
+    <body>
+        <form action="" method="">
+            <label onmousedown="clickk()">first name:</label><input type="text" name="firstname"><br>
+            <label onmouseover="mouseoverfunction()" onmouseout="mouseoutfunction()">last name:</label><input type="text" name="lastname" ><br>
+            <label onmousemove="mousemovefunction()">full name:</label><input type="text" name="fullname"><br>
+            <!--<input type="button" value="clickme" onclick="click()"-->
+            <!--<button onclick="clickk()">click me</button>-->
+            <!--<button ondblclick="clickk()">click me</button>-->
+            <button onmousedown="clickk()">click me</button>
+            <button onmouseup="mouseupfunction()">click</button>
+
+      
+        </form>
+        
+
+        <div class="d1">
+            <div class="d11"> </div>
+            <div class="d11"></div>
+           
+        </div>
+        <div class="d13">
+            <div class="d11"> </div>
+            <div class="d11"></div>
+           
+        </div>
+
+    <ul>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+        <li><a href="#">home</a></li>
+    </ul>
+    </body>
+</html>

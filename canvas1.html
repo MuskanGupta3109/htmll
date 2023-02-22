@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html5>
+    <head>
+         <title>Canvas example</title>
+
+
+        
+    </head>
+    <body>
+        <canvas id="mycanvas" width="300" height="300" style="border:2px solid;">
+            your browser doesn't support canvas tag
+        </canvas>
+        <canvas id="mycanvas2" width="300" height="300" style="border:2px solid;">
+            your browser doesn't support canvas tag
+        </canvas>
+        <canvas id="mycanvas3" width="300" height="300" style="border:2px solid;">
+            your browser doesn't support canvas tag
+        </canvas>
+        <canvas id="mycanvas4" width="300" height="300" style="border:2px solid;">
+            your browser doesn't support canvas tag
+        </canvas>
+
+        <script >
+            var c=document.getElementById("mycanvas");
+            var ctx=c.getContext("2d");
+            ctx.fillStyle="#FF0000"
+            ctx.fillRect(0,0,200,100);
+        </script>
+        <script >
+        var c=document.getElementById("mycanvas2");
+        var c3=document.getElementById("mycanvas3");
+        var c4=document.getElementById("mycanvas4");
+        var cctx=c.getContext("2d");
+        var ctx3=c3.getContext("2d");
+        var ctx4=c4.getContext("2d");
+       // ctx.fillStyle="#FF0000"
+        //ctx.fillRect(0,0,200,100);
+        cctx.moveTo(0,0);
+        cctx.lineTo(300,400)
+        cctx.stroke();
+        ctx3.beginPath();
+        //x=95 y=50 r=40 start=0 stop=2*math.pi
+        ctx3.arc(95,50,40,0,2*Math.PI);
+        ctx3.fillStyle="#FF0000"
+
+
+        ctx3.stroke();
+        ctx3.fillStyle="#FF0000"
+        ctx4.font="30px Arial";
+        ctx4.fillText("MAHADEV",18,50);
+        ctx4.strokeText("MAHADEV ",40,70);
+
+
+
+    </script>
+
+    
+    </body>
+</html5>

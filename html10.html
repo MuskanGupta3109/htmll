@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <form id="form-control" action="html9.html" method="get" target="_blank" enctype="application/x-www-form-urlencoded">
+            <fieldset>
+                <legend>Registration form</legend>
+                <label>first name: </label><input type="text" name="firstname" autocomplete="off"><br><br>
+                <label>last name: </label><input type="text" name="lastname"><br><br>
+                <label>Password: </label><input type="password" name="password"><br><br>
+                <label>address: <textarea></textarea><br><br>
+                <label>Email: </label><input type="email" name="email"><br><br>
+                <label>gender: </label>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="female">female
+                <input type="radio" name="gender" value="other">other
+                <br><br>
+                <label>sports: </label>
+                <input type="checkbox" name="sports" value="cricket">cricket
+                <input type="checkbox" name="sports" value="volleyball">volleyball
+                <input type="checkbox" name="sports" value="tennis">tennis
+                <br><br>
+                <input type ="file" value="file"><br><br>
+                <label>color:</label>
+                <input type="color" value="color"><br><br>
+                <label>date</label>
+                <input type="date" value="date"><br><br>
+                <label>date</label>
+                <input type="datetime-local" value="date"><br><br>
+                <label>month</label>
+                <input type="month" value="month"><br><br>
+                <label> Telephone number</label>
+                <input type="number" value="number"><br><br>
+                <label>URL</label>
+                <input type="url" value="url"><br><br>
+                <label>week</label>
+                <input type="week" value="week"><br><br>
+                <label>search</label>
+                <input type="search" value="search"><br><br>
+                <label>contact number</label>
+                <input type="tel" value="contact number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br><br>
+            <input type="tel" value="contact number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"  placeholder="Format: 123-123-1234"><br><br>
+
+
+                
+
+
+
+
+                <input type="image" alt="submit" src="image.jpg" width="35" height="35" value="submit">
+                <input type="reset" value="reset">
+
+                <input type="submit" value="submit">
+                <input type="button" value="Button">
+                <br><br>
+
+
+
+
+
+            </fieldset>
+
+
+
+            
+        </form>
+    
+
+
+        <label>Email: </label><input type="email" name="email" form="form-control"><br><br>
+
+
+    </body>
+</html>

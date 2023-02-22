@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            example of css selector</title>
+            <style type="text/css">
+                p{
+                    text-align:center;
+                    color:blue;
+                }
+                #para1{
+                    text-align:left;
+                    color:red;
+                }
+                #lav{
+                    text-align:left;
+                    color:red;
+                }
+                .centre{
+                    text-align:right;
+                    color:green;
+                }
+                *{
+                    font-size:15px;
+                    color:crimson;
+                }
+                h3,h4,h5{
+                    color:grey;
+                    font-size:20px;
+
+                }
+                .xyz{
+                    color:red;
+                    background:green;
+                    font-size:20px;
+                }
+            </style>
+        
+    
+    </head>
+    <body>
+        <!-- below section tells about element sector-->
+        <p>this will be applied on all paragraaph tag</p>
+        <!-- below section tells about id selector-->
+        <p id="para1">this is a paragraph using ID selector</p>
+        <p id="lav">this is a paragraph using ID =1 selector</p>
+        <!-- below section tells about class selector-->
+        <h1 class="centre">this is the example of class selector</h1>
+        <p class="centre">this is the example of class selector<p>
+        <!-- below section tells about universal selector-->
+        <h1>this is the example of universal selector</h1>
+        <!-- below section tells about group selector-->
+        <h3 class="centre">this is the example of group selector</h3>
+        <h4 class="centre">this is the example of group selector</h4>
+        <h5 class="centre">this is the example of group selector</h5>
+        <input  class="xyz" type="submit" value="submit">
+        <input type="button" value="submit button">
+    </body>
+
+</html>

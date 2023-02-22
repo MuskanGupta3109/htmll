@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>html events</title>
+        <script type="text/javascript">
+            function changeBackground(){
+                document.body.style.background="green";
+            }
+            function changebackground(){
+                document.body.style.background="yellow";
+            }
+            function changeborder(){
+                document.body.style.border="10px solid";
+            }
+            function changebackground1(){
+                document.body.style.background="red";
+            }
+            function changebackgroundonsubmit(){
+                document.body.style.background="pink";
+            }
+            function changebackgroundonsubmitt(){
+                alert();
+            }
+                       
+        </script>
+    </head>
+    <body>
+        <!--<form action="" method="" onreset="changebackground1()" onsubmit="changebackgroundonsubmit()">-->
+        <form action="" method="" onreset="changebackground1()" onsubmit="changebackgroundonsubmitt()">
+            
+            <label>first name</label>
+            <input type="text" name="firstname" onblur="changeBackground()"><br>
+            <label>last name</label>
+            <input type="text" name="last name" onchange="changeBackground()"><br>
+            <label>full name</label>
+            <input type="text" name="full name" oninput="changebackground()"><br>
+            <label>email</label>
+            <input type="email" name="email" oninput="changeborder()" ><br>
+            <label>email</label>
+            <input type="email" name="email"><br>
+       
+            <input type="submit" name="submit">
+            <input type="reset"  name="reset" ><br>
+       
+       
+       
+       
+        </form>
+    </body>
+</html>

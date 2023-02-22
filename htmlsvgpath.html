@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> svg  text and stroking</title>
+        
+    </head>
+    <body>
+        <svg height="200" width="400">
+            <path d="M150 0 L75 200 L225 200 Z" style="fill:none;stroke:blue"></path>
+            <path d="M300 0 S 500 200 300 400" style="fill:none;stroke:blue;stroke-width:2"></path>
+            <path d="M300 100 S 500 200 300 400" style="fill:none;stroke:blue;stroke-width:2"></path>
+            <path d="M300 100 S 500 20 300 200" style="fill:none;stroke:blue;stroke-width:2"></path>
+            <path d="M500 0 S 450 400 450 30" style="fill:none;stroke:black;stroke-width:2"></path>
+
+        </svg>
+        <svg height="30" width="200">
+            <text x="0" y="15">I LOVE MAHADEV</text>
+        </svg>
+        <svg height="100" width="200">
+            <text x="0" y="15" fill="red" transform="rotate(30 20,50)">I LOVE MAHADEV</text>
+        </svg>
+        <svg height="100" width="300">
+            <g fill="none" >
+                <path stroke="red" d="M5 20 L215 0" />
+                <path stroke="black" d="M5 40 L215 0" />
+                <path stroke="blue" d="M5 60 L215 0" />
+
+
+
+
+
+
+            </g>
+            <g>
+                <path stroke="red" d="M5 100 L300 0" />
+                <path stroke="black" d="M5 120 L300 0" />
+                <path stroke="blue" d="M5 140 L300 0" />
+
+
+
+
+
+
+            </g>
+            <g fill="none" stroke="black">
+                <path stroke-width="2" d="M50 100 L600 0" />
+                <path strokh-width="5" d="M50 120 L600 0" />
+                <path stroke-width="7" d="M50 120 L600 0" />
+
+
+
+
+                <path stroke-width="2" d="M100 20 L200 20" />
+                <path strokh-width="5" d="M100 40 L200 40" />
+                <path stroke-width="7" d="M100 60 L200 60" />
+
+
+
+
+
+
+            </g>
+            <g fill="none" stroke-width="3" stroke="black">
+                <path stroke-linecap="butt" d="M100 20 L200 20" />
+                <path stroke-linecap="round" d="M100 40 L200 40" />
+                <path stroke-linecap="square" d="M100 60 L200 60" />
+  
+            </g>
+        </svg>
+            <svg geight="100" width="200">
+            <g fill="none" stroke-width="3" stroke="black">
+            <path stroke-dasharray="5,5" d="M90 20 L200 20" />
+            <path strokh-dasharray="10,10" d="M90 40 L200 40" />
+            <path stroke-dasharray="20,14,5,7,6,7" d="M90  60 L200 60" />
+
+            
+            
+        </svg>
+        
+            <svg height="100" width="300">
+
+
+        </svg>
+    </body>
+</html>
